@@ -625,7 +625,7 @@ function simp_loadAudio(elem) {
 }
 
 function simp_setAlbum(index) {
-  simp_cover.innerHTML = simp_a_url[index].dataset.cover ? '<div style="background:url(' + simp_a_url[index].dataset.cover + ') no-repeat;background-size:cover;width:80px;height:80px;"></div>' : '<img src="https://github.com/AdieBima/adiebima-musik.io/blob/7d24bc2358cc90695250ffd47cbd2714c9333c02/logome.gif" alt="logo" style="width: 50%; height: 50%; margin: 10%; border-radius:100px; border: 5px solid #eee;"></img>';
+  simp_cover.innerHTML = simp_a_url[index].dataset.cover ? '<div style="background:url(' + simp_a_url[index].dataset.cover + ') no-repeat;background-size:cover;width:80px;height:80px;"></div>' : '<img src="logome.gif" alt="logo" style="width: 50%; height: 50%; margin: 10%; border-radius:100px; border: 5px solid #eee;"></img>';
   simp_title.innerHTML = simp_source[index].querySelector('.simp-source').innerHTML;
   simp_artist.innerHTML = simp_source[index].querySelector('.simp-desc') ? simp_source[index].querySelector('.simp-desc').innerHTML : '';
 }
